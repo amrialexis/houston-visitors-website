@@ -1,0 +1,176 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   
+}
+
+body {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+a {
+   color: rgb(219, 219, 219);
+}
+
+.header {
+   background: rgb(40, 40, 40);
+   box-shadow: 1px 1px 4px rgb(255, 255, 255);
+
+   position: fixed;
+   width: 100%;
+   
+   z-index: 3;
+}
+
+.header ul {
+   list-style: none;
+   overflow: hidden;
+   /* background-color: black; */
+}
+
+.header ul a {
+   display: block;
+   
+   padding: 20px;
+   
+
+   border-right: 1px solid rgba(146, 146, 255, 0.635);
+
+   text-decoration: none;
+}
+
+.header ul a:hover {
+   background: rgba(255, 255, 255, 0.096);
+   color: white;
+}
+
+
+/* Logo */
+
+.header .logo {
+   display: block;
+   float: left;
+   font-size: 2em;
+   padding: 10px 20px;
+
+   text-decoration: none;
+   color: rgb(185, 185, 185);
+}
+
+
+.header .menu {
+   clear: both;
+   max-height: 0;
+
+   padding-bottom: 0;
+
+   transition: padding-bottom .2s ease-out;
+   transition: max-height .2s ease-out;
+}
+
+/* HAMBURGER FORMATION
+This will act as container (label containing span)
+Hence position relative */
+.header .menu-burger {
+   border: 1px solid transparent;
+   border-radius: 25px ;
+   padding: 28px 10px;
+   float: right;
+   position: relative;
+
+   cursor: pointer;
+}
+
+.header .menu-burger:hover {
+   background-color: rgba(255, 255, 255, 0.07);
+}
+
+
+.header .menu-burger .nav-burger { 
+   background: white;
+   display: block;
+   height: 2px;
+   width: 25px;
+   position: relative;
+   transition: .2s ease-out;
+}
+
+.header .menu-burger .nav-burger::before {
+   content: '';
+   display: block;
+   background: white;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   top: 6px;
+   
+   transition: all 0.2s ease-out;
+}
+
+.header .menu-burger .nav-burger::after {
+   content: '';
+   display: block;
+   background: white;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   top: -6px;
+   transition: all 0.2s ease-out;
+}
+
+.header .menu-button {
+   display: none;
+
+}
+
+/* this is where magic of popping out menu happens */
+.header input:checked ~ .menu {
+   max-height: 380px;
+   padding-bottom: 900px;
+   transition: .3s;
+   
+}
+.header input:checked ~ .header .um2 {
+   height: 100%;
+}
+.header input:checked ~ .menu-burger .nav-burger {
+   background: transparent;
+   
+}
+
+.header input:checked ~ .menu-burger .nav-burger::before {
+   transform: rotate(45deg);
+   top: 0;
+   width: 20px;
+}
+
+.header input:checked ~ .menu-burger .nav-burger::after {
+   top: 0;
+   transform: rotate(-45deg);
+   width: 20px;
+}
+
+
+@media screen and (min-width: 900px) {
+   .header li {
+       float: left;
+   }
+
+   .header li a {
+       padding: 20px 30px;
+
+   }
+
+   .header .menu {
+       clear: none;
+       float: right;
+       max-height: none;
+   }
+
+   .header .menu-burger  {
+       display: none;
+   }
+
+}
