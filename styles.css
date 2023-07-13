@@ -194,7 +194,7 @@ Hence position relative */
 /* homepage's background picture */
 .hero {
    background-color: darkcyan;
-   background-image: url(../resources/houston3.jpg);
+   background-image: url(./resources/houston3.jpg);
    color: white;
    background-size: cover;
    padding-top: 200px;
