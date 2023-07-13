@@ -12,7 +12,7 @@ body {
 
 
 a {
-   color: rgb(143, 143, 143);
+   color: rgb(44, 44, 44);
 }
 
 .header {
@@ -92,35 +92,42 @@ Hence position relative */
 
 
 .header .menu-burger .nav-burger { 
-   background: black;
+   background: rgb(116, 116, 116);
    display: block;
    height: 2px;
    width: 25px;
    position: relative;
+
    transition: .2s ease-out;
+
+   border-radius: 7px;
 }
 
 .header .menu-burger .nav-burger::before {
    content: '';
    display: block;
-   background: black;
+   background: rgb(52, 52, 52);
    position: absolute;
    height: 100%;
    width: 100%;
    top: 6px;
    
    transition: all 0.2s ease-out;
+
+   border-radius: 7px;
 }
 
 .header .menu-burger .nav-burger::after {
    content: '';
    display: block;
-   background: black;
+   background: rgb(52, 52, 52);
    position: absolute;
    height: 100%;
    width: 100%;
    top: -6px;
    transition: all 0.2s ease-out;
+
+   border-radius: 7px;
 }
 
 .header .menu-button {
@@ -156,7 +163,7 @@ Hence position relative */
 }
 
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 750px) {
    .header li {
      float: left;
        
