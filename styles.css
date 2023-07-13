@@ -11,7 +11,7 @@ body {
 }
 
 .um2 {
-   max-width: 1060px;
+   max-width: 960px;
    margin-left: auto;
    margin-right: auto;
 }
@@ -193,16 +193,18 @@ Hence position relative */
 /* This is where style for body starts */
 /* homepage's background picture */
 .hero {
-   background-color: darkcyan;
+   background-color: rgb(173, 173, 173);
    background-image: url(./resources/houston3.jpg);
    color: white;
    background-size: cover;
+   background-blend-mode: multiply;
+
    padding-top: 200px;
    padding-bottom: 200px;
 }
 
 .container {
-   max-width: 1060px;
+   max-width: 960px;
    margin-left: auto;
    margin-right: auto;
    padding-left: 1rem;
