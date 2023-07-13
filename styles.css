@@ -10,6 +10,11 @@ body {
    font-family: Arial, Helvetica, sans-serif;
 }
 
+.um2 {
+   max-width: 1060px;
+   margin-left: auto;
+   margin-right: auto;
+}
 
 a {
    color: rgb(44, 44, 44);
@@ -17,7 +22,7 @@ a {
 
 .header {
    background: white;
-   box-shadow: 1px 1px 4px rgb(195, 195, 195);
+   /* box-shadow: 1px 1px 4px rgb(195, 195, 195); */
 
    position: fixed;
    width: 100%;
@@ -53,7 +58,7 @@ a {
    display: block;
    float: left;
    font-size: 1.5em;
-   padding: 18px 30px;
+   padding: 18px 0px;
 
    text-decoration: none;
    color: rgb(52, 52, 52);
@@ -92,7 +97,7 @@ Hence position relative */
 
 
 .header .menu-burger .nav-burger { 
-   background: rgb(116, 116, 116);
+   background: rgb(105, 105, 105);
    display: block;
    height: 2px;
    width: 25px;
@@ -100,7 +105,7 @@ Hence position relative */
 
    transition: .2s ease-out;
 
-   border-radius: 7px;
+   border-radius: 17px;
 }
 
 .header .menu-burger .nav-burger::before {
@@ -114,7 +119,7 @@ Hence position relative */
    
    transition: all 0.2s ease-out;
 
-   border-radius: 7px;
+   border-radius: 17px;
 }
 
 .header .menu-burger .nav-burger::after {
@@ -127,7 +132,7 @@ Hence position relative */
    top: -6px;
    transition: all 0.2s ease-out;
 
-   border-radius: 7px;
+   border-radius: 17px;
 }
 
 .header .menu-button {
@@ -183,4 +188,23 @@ Hence position relative */
        display: none;
    }
 
+}
+
+/* This is where style for body starts */
+/* homepage's background picture */
+.hero {
+   background-color: darkcyan;
+   background-image: url(../resources/houston3.jpg);
+   color: white;
+   background-size: cover;
+   padding-top: 200px;
+   padding-bottom: 200px;
+}
+
+.container {
+   max-width: 1060px;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 1rem;
+   padding-right: 1rem;
 }
