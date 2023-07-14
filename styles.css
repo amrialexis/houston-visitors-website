@@ -237,6 +237,75 @@ Hence position relative */
    border-radius: 14px;
 
    color: rgb(91, 91, 91);
- 
-   
 }
+
+/* showcase part of the website tap 4 activities to do */
+
+.showcasetitle {
+   text-align: center;
+   /* below keeps content contained in place */
+   max-width: 960px;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 1rem;
+   padding-right: 1rem;
+   margin-top: 2rem;
+}
+
+.boxshow {
+   border-radius: 7px;
+   box-shadow: 0px 0px 7px rgb(132, 132, 132);
+}
+
+.boxshowcontainer {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 1rem;
+
+   max-width: 960px;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 1rem;
+   padding-right: 1rem;
+   margin-top: 1rem;
+
+   margin-bottom: 10rem;
+}
+
+.boxshow1 {
+   background-color: aliceblue;
+   background-image: url(./resources/theater.jpg);
+   background-size: cover;
+   padding-top: 100px;
+   padding-bottom: 100px;
+
+   /* so it applies of the top side only */
+   border-top-left-radius: 7px;
+   border-top-right-radius: 7px;
+
+}
+
+.boxshow2 {
+   background-color: aliceblue;
+   background-image: url(./resources/nasa.jpg);
+   background-size: cover;
+   padding-top: 100px;
+   padding-bottom: 100px;
+
+   border-top-left-radius: 7px;
+   border-top-right-radius: 7px;
+}
+
+.boxshow3 {
+   background-color: aliceblue;
+   background-image: url(./resources/zoo.jpg);
+   background-size: cover;
+   padding-top: 100px;
+   padding-bottom: 100px;
+
+   border-top-left-radius: 7px;
+   border-top-right-radius: 7px;
+}
+
+
+
