@@ -228,13 +228,13 @@ Hence position relative */
    margin-right: auto;
    padding-left: 1rem;
    padding-right: 1rem;
-   margin: 1rem 0rem;
+   margin-top: 1rem;
 }
 
 .box {
    background-color: rgb(231, 236, 242);
    padding: 60px 0px;
-   border-radius: 8px;
+   border-radius: 14px;
 
    color: rgb(91, 91, 91);
  
