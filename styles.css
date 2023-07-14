@@ -228,7 +228,7 @@ Hence position relative */
    margin-right: auto;
    padding-left: 1rem;
    padding-right: 1rem;
-   margin-top: 1rem;
+   margin-top: 3rem;
 }
 
 .box {
@@ -239,10 +239,11 @@ Hence position relative */
    color: rgb(91, 91, 91);
 }
 
-/* showcase part of the website tap 4 activities to do */
+/* showcase part of the website tap 3 activities to do */
 
 .showcasetitle {
    text-align: center;
+   color: rgb(60, 87, 110);
    /* below keeps content contained in place */
    max-width: 960px;
    margin-left: auto;
@@ -253,8 +254,16 @@ Hence position relative */
 }
 
 .boxshow {
-   border-radius: 7px;
-   box-shadow: 0px 0px 7px rgb(132, 132, 132);
+   border-radius: 8px;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.40);
+
+   transition: 0.4s;
+   cursor: pointer;
+
+}
+
+.boxshow:hover{
+   transform: translate(0, -2px);
 }
 
 .boxshowcontainer {
@@ -269,13 +278,15 @@ Hence position relative */
    padding-right: 1rem;
    margin-top: 1rem;
 
-   margin-bottom: 10rem;
+   margin-bottom: 1rem;
 }
 
 .boxshow1 {
    background-color: aliceblue;
-   background-image: url(./resources/theater.jpg);
-   background-size: cover;
+   background-image: url(./resources/miller.jpg);
+   background-size: contain;
+   background-size: 100%;
+   background-repeat: no-repeat;
    padding-top: 100px;
    padding-bottom: 100px;
 
@@ -287,7 +298,7 @@ Hence position relative */
 
 .boxshow2 {
    background-color: aliceblue;
-   background-image: url(./resources/nasa.jpg);
+   background-image: url(./resources/space.jpg);
    background-size: cover;
    padding-top: 100px;
    padding-bottom: 100px;
@@ -307,5 +318,45 @@ Hence position relative */
    border-top-right-radius: 7px;
 }
 
+/* time to customize the text inse the showcase boxes */
 
 
+.boxshow h2 {
+   padding: 20px 10px;
+   text-align: left;
+}
+
+.boxshow p {
+   padding: 0px 10px;
+   padding-bottom: 20px;
+}
+
+.exploremorebutton {
+   padding: 12px 18px;
+   background-color: white;
+   font-size: 15px;
+   font-weight: bold;
+   color: rgb(60, 87, 110);
+   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.40);
+   
+   margin-bottom: 10rem;
+
+   border: none;
+   border-radius: 9px;
+
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+.exploremorebutton:hover {
+   transform: scale(1.022);
+}
+
+.buttoncontainer {
+   max-width: 960px;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 1rem;
+   padding-right: 1rem;
+   margin-top: 1rem;
+}
