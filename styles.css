@@ -7,7 +7,7 @@
 
 body {
    background: white;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: 'Lato', sans-serif;
 }
 
 .um2 {
@@ -250,7 +250,7 @@ Hence position relative */
 
 .boxshow {
    border-radius: 8px;
-   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.40);
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.30);
    transition: 0.4s;
    cursor: pointer;
 }
@@ -322,7 +322,54 @@ Hence position relative */
    border-top-left-radius: 7px;
    border-top-right-radius: 7px;
 }
+/* second part of showcase cards */
 
+.boxshow4 {
+   background-color: aliceblue;
+   background-image: url(./resources/aquarium.jpg);
+   background-size: contain;
+   background-size: 100%;
+   background-repeat: no-repeat;
+   padding-top: 35%;
+   padding-bottom: 35%;
+
+   /* so it applies of the top side only */
+   border-top-left-radius: 7px;
+   border-top-right-radius: 7px;
+
+}
+
+
+
+.boxshow5 {
+   background-color: aliceblue;
+   background-image: url(./resources/corner.jpeg);
+   background-size: contain;
+   background-size: 100%;
+   background-repeat: no-repeat;
+
+
+   padding-top: 35%;
+   padding-bottom: 35%;
+
+   border-top-left-radius: 7px;
+   border-top-right-radius: 7px;
+}
+
+.boxshow6 {
+   background-color: aliceblue;
+   background-image: url(./resources/goode.jpg);
+   background-size: contain;
+   background-size: 100%;
+   background-repeat: no-repeat;
+
+
+   padding-top: 35%;
+   padding-bottom: 35%;
+
+   border-top-left-radius: 7px;
+   border-top-right-radius: 7px;
+}
 /* time to customize the text inse the showcase boxes */
 
 
