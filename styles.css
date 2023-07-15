@@ -91,11 +91,6 @@ Hence position relative */
    cursor: pointer;
 }
 
-.header .menu-burger:hover {
-   background-color: whitesmoke;
-}
-
-
 .header .menu-burger .nav-burger { 
    background: rgb(105, 105, 105);
    display: block;
@@ -142,9 +137,9 @@ Hence position relative */
 
 /* this is where magic of popping out menu happens */
 .header input:checked ~ .menu {
-   max-height: 180px;
-   padding-bottom: 20px;
-   transition: .3s;
+   max-height: 100%;
+   padding-bottom: 100%;
+   transition: .5s;
    
 }
 .header input:checked ~ .header .um2 {
@@ -228,7 +223,7 @@ Hence position relative */
    margin-right: auto;
    padding-left: 1rem;
    padding-right: 1rem;
-   margin-top: 3rem;
+   margin-top: 2rem;
 }
 
 .box {
@@ -256,11 +251,10 @@ Hence position relative */
 .boxshow {
    border-radius: 8px;
    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.40);
-
    transition: 0.4s;
    cursor: pointer;
-
 }
+
 
 .boxshow:hover{
    transform: translate(0, -2px);
@@ -281,14 +275,15 @@ Hence position relative */
    margin-bottom: 1rem;
 }
 
+
 .boxshow1 {
    background-color: aliceblue;
    background-image: url(./resources/miller.jpg);
    background-size: contain;
    background-size: 100%;
    background-repeat: no-repeat;
-   padding-top: 100px;
-   padding-bottom: 100px;
+   padding-top: 35%;
+   padding-bottom: 35%;
 
    /* so it applies of the top side only */
    border-top-left-radius: 7px;
@@ -296,12 +291,18 @@ Hence position relative */
 
 }
 
+
+
 .boxshow2 {
    background-color: aliceblue;
    background-image: url(./resources/space.jpg);
-   background-size: cover;
-   padding-top: 100px;
-   padding-bottom: 100px;
+   background-size: contain;
+   background-size: 100%;
+   background-repeat: no-repeat;
+
+
+   padding-top: 35%;
+   padding-bottom: 35%;
 
    border-top-left-radius: 7px;
    border-top-right-radius: 7px;
@@ -310,9 +311,13 @@ Hence position relative */
 .boxshow3 {
    background-color: aliceblue;
    background-image: url(./resources/zoo.jpg);
-   background-size: cover;
-   padding-top: 100px;
-   padding-bottom: 100px;
+   background-size: contain;
+   background-size: 100%;
+   background-repeat: no-repeat;
+
+
+   padding-top: 35%;
+   padding-bottom: 35%;
 
    border-top-left-radius: 7px;
    border-top-right-radius: 7px;
