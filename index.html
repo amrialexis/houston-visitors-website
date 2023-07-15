@@ -5,8 +5,8 @@
 
    <!-- Google font -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +17,7 @@
 <div class="container">
    <header class="header um2">
       <!--Logo-->
-      <a href="#" class="logo"><b>Houston</b></a>
+      <a href="#" class="logo"><b>MAAP</b></a>
 
         <!--CHECKBOX/ HAMBURGER to initiate Clicking-->
         <input type="checkbox" class="menu-button" id="menu-button" >
@@ -38,35 +38,49 @@
 <br>
 <div class="hero">
    <div class="container">
-      <!-- <h1>Visit Houston</h1> -->
-      <br>
+      <h1>Unlock the Best of Houston</h1>
       <p>
-         <!-- Enjoy culture, food, and sports in this vibrant and diverse city. -->
+         Your Ultimate Guide to Exploring the Heart of Texas!
       </p>
-   </div>
-</div>
 
-<!-- 3 boxes describing benefits -->
+   </div>
+   <!-- 3 boxes describing benefits -->
 
 <div class="boxcontainer">
    <div class="box">
-      <b>Local Insights and Tips</b>
-      <p>Information about Houston's attractions, dining options, and more</p>
+      <b>Search</b>
+      
+      <form class="search">
+
+         <input list="userselection" id="usersel" name="usersel" placeholder="Search Houston.." />
+            <datalist id="userselection">
+            <option value="Live Events">
+            <option value="Museums">
+            <option value="attractions">
+            <option value="Restaurants">
+            <option value="Hotels">
+         </datalist>
+      </form>
    </div>
    <div class="box">
-      <b>Time and Money Savings</b>
-      <p>All the necessary information you need to know in one place</p>
+      <b>Date</b>
+      <div class="date">
+         <input type="date">
+      </div>
    </div>
    <div class="box">
-      <b>Up-to-date Information</b>
-      <p>Be informed about the latest happenings and events</p>
+      <b>Mood</b>
+      <p></p>
    </div>
 </div>
+</div>
+
+
 
   <!-- middle part of the website "top 3 activities.."-->
   <div class="showcasetitle">
    <h1>
-      Best places to visit in Houston Texas
+      Best attractions in Houston Texas
    </h1>
 </div>
 <div class="boxshowcontainer">
@@ -106,7 +120,7 @@
 <!-- Next part of the website "FOOD"-->
 <div class="showcasetitle">
    <h1>
-      Best must try restaurants in Houston Texas
+      Must try restaurants in Houston Texas
    </h1>
 </div>
 <div class="boxshowcontainer">
