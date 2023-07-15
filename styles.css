@@ -228,10 +228,19 @@ Hence position relative */
 
 .box {
    background-color: rgb(231, 236, 242);
-   padding: 60px 0px;
+   padding-top: 20px;
    border-radius: 14px;
 
    color: rgb(91, 91, 91);
+}
+
+.box b {
+   padding: 10px 10px;
+}
+
+.box p {
+   padding: 10px 10px;
+   padding-bottom: 20px;
 }
 
 /* showcase part of the website tap 3 activities to do */
