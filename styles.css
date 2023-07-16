@@ -5,6 +5,11 @@
    
 }
 
+:root {
+   --blue: #1e90ff;
+   --white: #ffffff; 
+ } 
+
 body {
    background: white;
    font-family: 'Montserrat', sans-serif;
@@ -197,9 +202,9 @@ Hence position relative */
    margin-right: auto;
    /* the above controls width */
 
-   /* background-color: rgba(0, 0, 0, 0.286); */
-   background-image: url(./resources/blur.jpg);
-   color: rgb(60, 60, 60);
+   background-color: rgba(0, 0, 0, 0.2);
+   background-image: url(./resources/blur2.jpg);
+   color: white;
    border-radius: 20px;
    background-size: cover;
    letter-spacing: 2px;
@@ -208,7 +213,7 @@ Hence position relative */
    text-align: center;
    padding-top: 50px;
    padding-bottom: 120px;
-   margin-bottom: 6rem;
+   margin-bottom: 8rem;
 }
 
 /* Customizing homapage image texts */
@@ -255,7 +260,6 @@ form input:focus {
 }
 /* ender of search customization */
 
-/* Data Selection Customization */
 
 .date {
    padding-top: 10px;
@@ -305,36 +309,58 @@ form input:focus {
 .box {
    /* background-color: red; */
    color: rgb(68, 68, 68);
-   border-right: solid 2px#fec267;
+   border-right: solid 2px #dbdbe7;
 }
-
 
 .explorebutton button{
    font-size: 16px;
-   background-color: #fec267;
-   color: rgb(68, 68, 68);;
+   background-color: #474973;
+   color: white;
    border: none;
    border-radius: 10px;
-   padding: 26px 15px;
+   padding: 28px 15px;
 
    cursor: pointer;
 }
-/* Random Text at the top */
-.randomtext {
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   gap: 10%;
 
-   max-width: 960px;
+/* Random Text at the top */
+.popular {
+   max-width: 975px;
    margin-left: auto;
    margin-right: auto;
-   padding-left: 1rem;
-   padding-right: 1rem;
+   padding-left: 10px;
+   padding-right: 10px;
+   text-align: center;
+}
+
+.randomtext {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 10%;
+
+   
+   max-width: 975px;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 10px;
+   padding-right: 10px;
 
 }
 .randomtext div {
-   b
    font-size: 15px;
+   color: rgb(94, 94, 94);
+   font-weight: light;
+   border-radius: 10px;
+   text-align: center;
+   padding: 10px;
+   cursor: pointer;
+
+   border: solid 1px rgb(226, 226, 226);
+}
+
+.randomtext div:hover {
+   background-color: #474973;
+   color: white;
 }
 /* background showcase NEW */
 
@@ -345,9 +371,9 @@ form input:focus {
 
 }
 #mainmodels {
-   grid-template-columns: 50% 25% 25%;
-   margin-top: 11rem;
-   gap: 0.1rem;
+   grid-template-columns: 40% 25% 25%;
+   margin-top: 7rem;
+   gap: 0.4rem;
    color: white;
 }
 .boxshowmain {
@@ -366,7 +392,7 @@ form input:focus {
    padding-top: 35%;
    padding-bottom: 35%;
 
-   border-radius: 10px;
+   border-radius: 5px;
    
 }
 
@@ -377,7 +403,7 @@ form input:focus {
    padding-top: 35%;
    padding-bottom: 35%;
 
-   border-radius: 10px;
+   border-radius: 5px;
 }
 
 .boxshow33 {
@@ -387,7 +413,7 @@ form input:focus {
    padding-top: 35%;
    padding-bottom: 35%;
 
-   border-radius: 10px;
+   border-radius: 5px;
 }
 
 .boxshow44 {
@@ -397,7 +423,7 @@ form input:focus {
    padding-top: 35%;
    padding-bottom: 35%;
 
-   border-radius: 10px;
+   border-radius: 5px;
 }
 
 /* showcase part of the website tap 3 activities to do */
