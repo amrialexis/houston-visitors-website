@@ -7,7 +7,7 @@
 
 body {
    background: white;
-   font-family: 'Lato', sans-serif;
+   font-family: 'Montserrat', sans-serif;
    line-height: 1.8;
 }
 
@@ -26,7 +26,7 @@ a {
    background-color: white;
    position: absolute;
    width: 100%;
-
+   padding-top: 10px;
    z-index: 0;
 }
 
@@ -61,7 +61,10 @@ a {
    padding: 0px 15px;
    border-radius: 30px;
    border-top: solid 2px #fec267;
+   
    text-decoration: none;
+   padding-top: 2px;
+   padding-bottom: 2px;
 
 }
 
@@ -212,7 +215,7 @@ Hence position relative */
 .hero h1 {
    font-weight: 900;
    font-size: 45px;
-   letter-spacing: -1px;
+   
    
 }
 
@@ -319,7 +322,7 @@ form input:focus {
    color: rgb(68, 68, 68);;
    border: none;
    border-radius: 10px;
-   padding: 26px 10px;
+   padding: 26px 15px;
 }
 
 .box b {
