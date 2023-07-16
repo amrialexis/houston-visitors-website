@@ -8,6 +8,7 @@
 body {
    background: white;
    font-family: 'Lato', sans-serif;
+   line-height: 1.8;
 }
 
 .um2 {
@@ -187,7 +188,11 @@ Hence position relative */
 /* This is where style for body starts */
 /* homepage's background picture */
 .hero {
-   
+   max-width: 960px;
+   margin-left: auto;
+   margin-right: auto;
+   /* the above controls width */
+
    background-color: rgba(0, 0, 0, 0.286);
    background-image: url(./resources/paint.jpg);
    color: white;
@@ -206,7 +211,6 @@ Hence position relative */
    font-weight: 900;
    font-size: 45px;
    letter-spacing: -1px;
-   /* background-color: rgba(255, 228, 196, 0.10); */
 }
 
 .hero p {
@@ -219,11 +223,10 @@ Hence position relative */
 /* search customization */
 
 .search {
-	max-width: 10rem;
 	display: flex;
 	flex-direction: column;
    padding-top: 10px;
-   padding-bottom: 20px;
+   
 }
 
 .search input {
@@ -231,13 +234,16 @@ Hence position relative */
 	height: 30px;
 	border-radius: 3px;
 	padding: 5px;
-	font-size: 13px;
+	font-size: 14px;
+   color: rgb(46, 46, 46);
+   width: 190px;
+   margin-left: 4rem;
 }
 
-#userselection {
-   background-color: white;
-   color: purple;
+input::placeholder {
+   color: rgb(207, 207, 207);
 }
+
 
 form input:focus {
 	outline: none;
@@ -248,17 +254,17 @@ form input:focus {
 
 .date {
    padding-top: 10px;
-   padding-bottom: 20px;
 }
 .date input {
    border: none;
 	height: 30px;
 	border-radius: 3px;
-	padding: 5px;
-	font-size: 1rem;
-   max-width: 10rem;
-   font-size: 13px;
-   color: rgb(75, 75, 75);
+	padding-left: 20px;
+   max-width: 12rem;
+   font-size: 15px;
+   margin-left: 4rem;
+   color: gray;
+   width: 130px;
 }
 
 .container {
@@ -274,37 +280,56 @@ form input:focus {
 
 .boxcontainer {
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   background-color: white;
+   grid-template-columns: 1fr 1fr;
+   background-color: rgba(255, 255, 255);
    box-shadow: -1px 4px 14px -12px rgba(0, 0, 0, 0.92);
    border-radius: 20px;
+   gap: 1%;
+   font-size: 17px;
 
-   max-width: 600px;
+   max-width: 620px;
+
    margin-left: auto;
    margin-right: auto;
-   padding-left: 1rem;
-   padding-right: 1rem;
+   padding: 20px;
    
    position: relative;
-   top: 10rem;
+   top: 9.7rem;
+}
+
+.boxcontainer span {
+   background-color: rgb(229, 229, 229);
+   border-radius: 40px;
+   padding: 2px;
+   margin-left: 6px;
+  
 }
 
 .box {
-   
-   padding-top: 20px;
-   border-radius: 14px;
-   margin: 2px 5px;
-
+   /* background-color: red; */
    color: rgb(68, 68, 68);
 }
 
-.box b {
-   padding: 10px 10px;
+/* DESTROYED CLASS */
+#search {
+   background-color: #483d8b;
+   max-width: 30px;
+   padding: 25px 20px;
+   margin-left: 245px;
+   position: absolute;
+   display: flex;
+   color: white;
+   justify-content: center;
+   border-radius: 12px;
+   bottom: 21px;
+   
+   cursor: pointer;
 }
 
-.box p {
-   padding: 10px 10px;
-   padding-bottom: 20px;
+
+
+.box b {
+   /* padding: 10px 10px; */
 }
 
 /* showcase part of the website tap 3 activities to do */
@@ -319,6 +344,19 @@ form input:focus {
    padding-left: 1rem;
    padding-right: 1rem;
    margin-top: 10rem;
+}
+
+.showcasetitle p {
+   text-align: center;
+   color: rgb(60, 87, 110);
+
+   max-width: 350px;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 1rem;
+   padding-right: 1rem;
+   margin-top: 1rem;
+   margin-bottom: 4rem;
 }
 
 .boxshow {
@@ -443,17 +481,21 @@ form input:focus {
    border-top-left-radius: 3px;
    border-top-right-radius: 3px;
 }
-/* time to customize the text inse the showcase boxes */
+/* time to customize the text inside the showcase boxes */
 
 
 .boxshow h2 {
-   padding: 20px 10px;
+   padding: 10px 10px;
    text-align: left;
+   font-size: 20px;
+   
 }
 
 .boxshow p {
    padding: 0px 10px;
    padding-bottom: 20px;
+   color: rgb(60, 87, 110);
+   font-size: 15px;
 }
 
 .exploremorebutton {

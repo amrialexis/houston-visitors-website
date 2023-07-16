@@ -3,10 +3,13 @@
 <head>
    <link rel="stylesheet" href="styles.css">
 
-   <!-- Google font -->
+   <!-- Google font link-->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+   <!-- Font awesome icons link -->
+   <script src="https://kit.fontawesome.com/73d9b70e33.js" crossorigin="anonymous"></script>
 
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,7 +36,7 @@
    </header>
 </div>
    <!-- home page's body content. homepage's background picture -->
-<br>
+
 <br>
 <br>
 <div class="hero">
@@ -48,11 +51,11 @@
 
 <div class="boxcontainer">
    <div class="box">
-      <b>Search</b>
+      <span><i class="fa-solid fa-location-dot"></i></span> <b>Location</b>
       
       <form class="search">
 
-         <input list="userselection" id="usersel" name="usersel" placeholder="Search Houston.." />
+         <input list="userselection" id="usersel" name="usersel" placeholder="Search Houston" />
             <datalist id="userselection">
             <option value="Live Events">
             <option value="Museums">
@@ -63,15 +66,13 @@
       </form>
    </div>
    <div class="box">
-      <b>Date</b>
+      <span><i class="fa-regular fa-location-dot"></i></span><b>Date</b>
       <div class="date">
          <input type="date">
       </div>
+      <i id="search" class="fa-solid fa-magnifying-glass"></i>
    </div>
-   <div class="box">
-      <b>Mood</b>
-      <p></p>
-   </div>
+   
 </div>
 </div>
 
@@ -80,17 +81,18 @@
   <!-- middle part of the website "top 3 activities.."-->
   <div class="showcasetitle">
    <h1>
-      Best attractions in Houston Texas
+      Top Destinations For You
    </h1>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit rem explicabo quam!</p>
 </div>
 <div class="boxshowcontainer">
    <div class="boxshow">
      <div class="boxshow1">
       
      </div>
-      <h2>Show or concert</h2>
+      <h2>Miller Outdoor Theatre</h2>
       <p>
-         Miller Outdoor Theatre is the only free open-air theatre of its kind in the United States. Enjoy anything from a concert to a play.
+          The only free open-air theatre of its kind in the United States
       </p>
    </div>
 
@@ -98,7 +100,7 @@
       <div class="boxshow2"></div>
       <h2>Space Center Houston</h2>
       <p>
-         At Space Center Houston, you can explore amazing spacecrafts, have interactive experiences and even meet astronauts
+         Explore amazing spacecrafts and have interactive experiences
       </p>
    </div>
 
@@ -106,7 +108,7 @@
       <div class="boxshow3"></div>
       <h2>Houston Zoo</h2>
       <p>
-         One of the best things to do in Houston for animal lovers is to go to the Houston Zoo. Many great species get housed and cared for here
+         Perfect for animal lovers. Many great species get housed and cared for here
       </p>
    </div>
 </div>
