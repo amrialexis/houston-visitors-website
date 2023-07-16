@@ -20,7 +20,7 @@
 <div class="container">
    <header class="header um2">
       <!--Logo-->
-      <a href="#" class="logo"><b>MAAP</b></a>
+      <a href="#" class="logo"><i class="fa-solid fa-seedling"></i></i></a>
 
         <!--CHECKBOX/ HAMBURGER to initiate Clicking-->
         <input type="checkbox" class="menu-button" id="menu-button" >
@@ -51,11 +51,12 @@
 
 <div class="boxcontainer">
    <div class="box">
-      <span><i class="fa-solid fa-location-dot"></i></span> <b>Location</b>
+      <!-- <div class="icons"><i class="fa-solid fa-location-dot"></i></div>  -->
+      <b>Location</b>
       
       <form class="search">
 
-         <input list="userselection" id="usersel" name="usersel" placeholder="Search Houston" />
+         <input list="userselection" id="usersel" name="usersel" placeholder="Choose what to do" />
             <datalist id="userselection">
             <option value="Live Events">
             <option value="Museums">
@@ -66,13 +67,32 @@
       </form>
    </div>
    <div class="box">
-      <span><i class="fa-regular fa-location-dot"></i></span><b>Date</b>
+      <!-- <div><i class="fa-regular fa-location-dot"></i></div> -->
+      <b>Date</b>
       <div class="date">
          <input type="date">
       </div>
-      <i id="search" class="fa-solid fa-magnifying-glass"></i>
+      <!-- <i id="search" class="fa-solid fa-magnifying-glass"></i> -->
    </div>
-   
+   <div class="box">
+      <!-- <div class="icons"><i class="fa-solid fa-location-dot"></i></div>  -->
+      <b>People</b>
+      
+      <form class="search">
+
+         <input list="userselection" id="usersel" name="usersel" placeholder="How many people?" />
+            <datalist id="userselection">
+            <option value="Live Events">
+            <option value="Museums">
+            <option value="attractions">
+            <option value="Restaurants">
+            <option value="Hotels">
+         </datalist>
+      </form>
+   </div>
+   <div class="explorebutton">
+     <button><b>Explore Now</b></button>
+   </div>
 </div>
 </div>
 

@@ -57,11 +57,12 @@ a {
 .header .logo {
    display: block;
    float: left;
-   font-size: 1.5em;
-   padding-top: 10px;
-
+   font-size: 1.9em;
+   padding: 0px 15px;
+   border-radius: 30px;
+   border-top: solid 2px #fec267;
    text-decoration: none;
-   color: rgb(52, 52, 52);
+
 }
 
 
@@ -193,16 +194,17 @@ Hence position relative */
    margin-right: auto;
    /* the above controls width */
 
-   background-color: rgba(0, 0, 0, 0.286);
-   background-image: url(./resources/paint.jpg);
-   color: white;
+   /* background-color: rgba(0, 0, 0, 0.286); */
+   background-image: url(./resources/blur.jpg);
+   color: rgb(60, 60, 60);
    border-radius: 20px;
    background-size: cover;
    letter-spacing: 2px;
    background-blend-mode: multiply;
 
+   text-align: center;
    padding-top: 50px;
-   padding-bottom: 100px;
+   padding-bottom: 120px;
 }
 
 /* Customizing homapage image texts */
@@ -211,6 +213,7 @@ Hence position relative */
    font-weight: 900;
    font-size: 45px;
    letter-spacing: -1px;
+   
 }
 
 .hero p {
@@ -226,18 +229,16 @@ Hence position relative */
 	display: flex;
 	flex-direction: column;
    padding-top: 10px;
-   
+   align-items: center;
 }
 
 .search input {
 	border: none;
 	height: 30px;
 	border-radius: 3px;
-	padding: 5px;
 	font-size: 14px;
    color: rgb(46, 46, 46);
-   width: 190px;
-   margin-left: 4rem;
+   width: 140px;
 }
 
 input::placeholder {
@@ -259,12 +260,12 @@ form input:focus {
    border: none;
 	height: 30px;
 	border-radius: 3px;
-	padding-left: 20px;
-   max-width: 12rem;
-   font-size: 15px;
-   margin-left: 4rem;
+	
+   
+   font-size: 13px;
+   
    color: gray;
-   width: 130px;
+   
 }
 
 .container {
@@ -280,14 +281,14 @@ form input:focus {
 
 .boxcontainer {
    display: grid;
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr auto;
    background-color: rgba(255, 255, 255);
    box-shadow: -1px 4px 14px -12px rgba(0, 0, 0, 0.92);
    border-radius: 20px;
    gap: 1%;
    font-size: 17px;
 
-   max-width: 620px;
+   max-width: 680px;
 
    margin-left: auto;
    margin-right: auto;
@@ -308,25 +309,18 @@ form input:focus {
 .box {
    /* background-color: red; */
    color: rgb(68, 68, 68);
-}
-
-/* DESTROYED CLASS */
-#search {
-   background-color: #483d8b;
-   max-width: 30px;
-   padding: 25px 20px;
-   margin-left: 245px;
-   position: absolute;
-   display: flex;
-   color: white;
-   justify-content: center;
-   border-radius: 12px;
-   bottom: 21px;
-   
-   cursor: pointer;
+   border-right: solid 2px#fec267;
 }
 
 
+.explorebutton button{
+   font-size: 16px;
+   background-color: #fec267;
+   color: rgb(68, 68, 68);;
+   border: none;
+   border-radius: 10px;
+   padding: 26px 10px;
+}
 
 .box b {
    /* padding: 10px 10px; */
