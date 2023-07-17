@@ -6,14 +6,25 @@
 }
 
 :root {
-   --blue: #1e90ff;
-   --white: #ffffff; 
+   --blue: #98c1d9;
+   --grayblack: rgb(28, 28, 28);
+   --textcolor: #222222;
+   --textcolor2: rgb(154, 154, 154);
+   --white: white;
  } 
 
 body {
    background: white;
    font-family: 'Montserrat', sans-serif;
-   line-height: 1.8;
+   line-height: 1.7;
+
+   padding-left: 1rem;
+   padding-right: 1rem;
+
+   max-width: 960px;
+   margin-left: auto;
+   margin-right: auto;
+
 }
 
 .um2 {
@@ -197,13 +208,8 @@ Hence position relative */
 /* This is where style for body starts */
 /* homepage's background picture */
 .hero {
-   max-width: 960px;
-   margin-left: auto;
-   margin-right: auto;
-   /* the above controls width */
-
-   background-color: rgba(0, 0, 0, 0.2);
-   background-image: url(./resources/blur2.jpg);
+   background-color: rgba(86, 125, 177, 0.558);
+   background-image: url(./resources/);
    color: white;
    border-radius: 20px;
    background-size: cover;
@@ -219,15 +225,16 @@ Hence position relative */
 /* Customizing homapage image texts */
 
 .hero h1 {
-   font-weight: 900;
-   font-size: 45px;
+   font-weight: 800;
+   font-size: 40px;
+
    
    
 }
 
 .hero p {
    font-weight: normal;
-   font-size: 17px;
+   font-size: 15px;
 
    padding: 5px 0px;
 }
@@ -237,7 +244,7 @@ Hence position relative */
 .search {
 	display: flex;
 	flex-direction: column;
-   padding-top: 10px;
+   padding-top: 5px;
    align-items: center;
 }
 
@@ -251,7 +258,7 @@ Hence position relative */
 }
 
 input::placeholder {
-   color: rgb(207, 207, 207);
+   color: rgb(210, 210, 210);
 }
 
 
@@ -262,7 +269,7 @@ form input:focus {
 
 
 .date {
-   padding-top: 10px;
+   padding-top: 5px;
 }
 .date input {
    border: none;
@@ -272,17 +279,10 @@ form input:focus {
    
    font-size: 13px;
    
-   color: gray;
+   color: rgb(132, 132, 132);
    
 }
 
-.container {
-   max-width: 960px;
-   margin-left: auto;
-   margin-right: auto;
-   padding-left: 1rem;
-   padding-right: 1rem;
-}
 
 
 /* 3 boxes describing benefits style */
@@ -294,7 +294,7 @@ form input:focus {
    box-shadow: -1px 4px 14px -12px rgba(0, 0, 0, 0.92);
    border-radius: 20px;
    gap: 1%;
-   font-size: 17px;
+   font-size: 16px;
 
    max-width: 680px;
 
@@ -309,27 +309,22 @@ form input:focus {
 .box {
    /* background-color: red; */
    color: rgb(68, 68, 68);
-   border-right: solid 2px #dbdbe7;
+
 }
 
 .explorebutton button{
-   font-size: 16px;
-   background-color: #474973;
-   color: white;
+   font-size: 20px;
+   background-color: var(--blue);
+   color: var(--white);
    border: none;
    border-radius: 10px;
-   padding: 28px 15px;
+   padding: 15px 14px;
 
    cursor: pointer;
 }
 
 /* Random Text at the top */
 .popular {
-   max-width: 975px;
-   margin-left: auto;
-   margin-right: auto;
-   padding-left: 10px;
-   padding-right: 10px;
    text-align: center;
 }
 
@@ -338,18 +333,11 @@ form input:focus {
    grid-template-columns: repeat(4, 1fr);
    gap: 10%;
 
-   
-   max-width: 975px;
-   margin-left: auto;
-   margin-right: auto;
-   padding-left: 10px;
-   padding-right: 10px;
-
 }
 .randomtext div {
-   font-size: 15px;
+   font-size: 14px;
    color: rgb(94, 94, 94);
-   font-weight: light;
+   font-weight: normal;
    border-radius: 10px;
    text-align: center;
    padding: 10px;
@@ -359,7 +347,7 @@ form input:focus {
 }
 
 .randomtext div:hover {
-   background-color: #474973;
+   background-color: var(--blue);
    color: white;
 }
 /* background showcase NEW */
@@ -435,25 +423,19 @@ form input:focus {
 
 .showcasetitle {
    text-align: center;
-   color: rgb(60, 87, 110);
-   /* below keeps content contained in place */
-   max-width: 960px;
-   margin-left: auto;
-   margin-right: auto;
-   padding-left: 1rem;
-   padding-right: 1rem;
+   color: var(--grayblack);
+
 
 }
 
 .showcasetitle p {
    text-align: center;
-   color: rgb(60, 87, 110);
-
+   color: var(--textcolor);
+   font-size: 14px;
    max-width: 350px;
    margin-left: auto;
    margin-right: auto;
-   padding-left: 1rem;
-   padding-right: 1rem;
+
    margin-top: 1rem;
    margin-bottom: 4rem;
 }
@@ -475,13 +457,7 @@ form input:focus {
    grid-template-columns: 1fr 1fr 1fr;
    gap: 1.5%;
 
-   max-width: 960px;
-   margin-left: auto;
-   margin-right: auto;
-   padding-left: 1rem;
-   padding-right: 1rem;
    margin-top: 1rem;
-
    margin-bottom: 1rem;
 }
 
@@ -586,21 +562,22 @@ form input:focus {
 .boxshow h2 {
    padding: 10px 10px;
    text-align: left;
-   font-size: 20px;
+   font-size: 16px;
+   color: var(--textcolor);
    
 }
 
 .boxshow p {
    padding: 0px 10px;
    padding-bottom: 20px;
-   color: rgb(60, 87, 110);
-   font-size: 15px;
+   color: var(--textcolor2);
+   font-size: 13px;
 }
 
 .exploremorebutton {
    padding: 12px 18px;
    background-color: white;
-   font-size: 15px;
+   font-size: 14px;
    font-weight: bold;
    color: rgb(60, 87, 110);
    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.32);
@@ -619,10 +596,5 @@ form input:focus {
 }
 
 .buttoncontainer {
-   max-width: 960px;
-   margin-left: auto;
-   margin-right: auto;
-   padding-left: 1rem;
-   padding-right: 1rem;
    margin-top: 1rem;
 }
