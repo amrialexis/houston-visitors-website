@@ -371,10 +371,11 @@ form input:focus {
 
 }
 #mainmodels {
-   grid-template-columns: 40% 25% 25%;
+   grid-template-columns: 40% 30% 30%;
    margin-top: 7rem;
    gap: 0.4rem;
    color: white;
+   
 }
 .boxshowmain {
    /* border-radius: 4px; */
@@ -386,43 +387,47 @@ form input:focus {
 }
 
 .boxshow11 {
-   background-color: aliceblue;
+   background-color: rgb(119, 141, 226);
    background-image: url(./resources/miller.jpg);
    background-size: cover;
+   background-blend-mode: lighten;
    padding-top: 35%;
    padding-bottom: 35%;
-
+   font-size: 12px;
    border-radius: 5px;
    
 }
 
 .boxshow22 {
-   background-color: aliceblue;
+   background-color: rgb(119, 141, 226);
    background-image: url(./resources/miller.jpg);
    background-size: cover;
+   background-blend-mode: lighten;
    padding-top: 35%;
    padding-bottom: 35%;
-
+   font-size: 12px;
    border-radius: 5px;
 }
 
 .boxshow33 {
-   background-color: aliceblue;
+   background-color: rgb(119, 141, 226);
    background-image: url(./resources/miller.jpg);
    background-size: cover;
+   background-blend-mode: lighten;
    padding-top: 35%;
    padding-bottom: 35%;
-
+   font-size: 12px;
    border-radius: 5px;
 }
 
 .boxshow44 {
-   background-color: aliceblue;
+   background-color: rgb(119, 141, 226);
    background-image: url(./resources/miller.jpg);
    background-size: cover;
+   background-blend-mode: lighten;
    padding-top: 35%;
    padding-bottom: 35%;
-
+   font-size: 12px;
    border-radius: 5px;
 }
 
