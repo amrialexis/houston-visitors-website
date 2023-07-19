@@ -435,13 +435,10 @@ form input:focus {
 }
 
 .showcasetitle p {
-   text-align: center;
+   text-align: left;
    color: var(--textcolor);
-   font-size: 14px;
-   max-width: 350px;
-   margin-left: auto;
-   margin-right: auto;
-
+   font-size: 15px;
+ 
    margin-top: 1rem;
    margin-bottom: 4rem;
 }
@@ -455,7 +452,7 @@ form input:focus {
 
 
 .boxshow:hover{
-   transform: translate(0, -2px);
+   transform: scale(1.06);
 }
 
 .boxshowcontainer {
@@ -469,19 +466,19 @@ form input:focus {
 
 
 .boxshow1 {
-   background-color: aliceblue;
+   background-color: rgba(93, 132, 187, 0.2);
    background-image: url(./resources/miller.jpg);
    background-size: contain;
    background-size: 150%;
+   
    background-repeat: no-repeat;
    padding-top: 60%;
    padding-bottom: 60%;
-
+   
 
    border-radius: 10px;
 
 }
-
 
 
 .boxshow2 {
@@ -570,17 +567,15 @@ form input:focus {
 }
 
 .exploremorebutton {
-   padding: 12px 18px;
+   padding: 10px 16px;
    background-color: white;
    font-size: 14px;
-   font-weight: bold;
-   color: rgb(60, 87, 110);
-   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.32);
-   
+   color: var(--textcolor2);
+   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
    margin-bottom: 1rem;
 
    border: none;
-   border-radius: 3px;
+   border-radius: 7px;
 
    cursor: pointer;
    transition: 0.3s;
@@ -588,8 +583,18 @@ form input:focus {
 
 .exploremorebutton:hover {
    transform: scale(1.022);
+   color: var(--textcolor);
+   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
 }
 
-.buttoncontainer {
+.seemore {
    margin-top: 1rem;
+   display: flex;
+   justify-content: space-between;
+}
+
+hr {
+   border: none;
+   background-color: whitesmoke;
+   height: 2px;
 }
