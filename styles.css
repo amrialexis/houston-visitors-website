@@ -6,7 +6,7 @@
 }
 
 :root {
-   --primary-color: #ee6c4d;
+   --primary-color: #6c388f;
    --seondary-color: #f3f7fc;
    --grayblack: rgb(28, 28, 28);
    --textcolor: #313131;
@@ -344,7 +344,7 @@ form input:focus {
 .randomtext div {
    font-size: 14px;
    color: var(--textcolor);
-   background-color: #3d5a80;
+   background-color: white;
    color: white;
    font-weight: normal;
    border-radius: 8px;
@@ -352,12 +352,13 @@ form input:focus {
    padding: 10px;
    cursor: pointer;
    transition: 0.3s;
+   border: solid 1px white;
 }
 
-.randomtext div:hover {
+/* .randomtext div:hover {
    background-color: var(--primary-color);
    color: white;
-}
+} */
 /* background showcase NEW */
 
 
@@ -425,7 +426,7 @@ form input:focus {
 
 .boxshowcontainer {
    display: grid;
-   grid-template-columns: repeat(4, 1fr);
+   grid-template-columns: repeat(5, 1fr);
    gap: 1.5%;
 
    margin-top: 1rem;
@@ -434,76 +435,78 @@ form input:focus {
 
 
 .boxshow1 {
-   background-color: #2932411c;
+   background-color: var(--seondary-color);
    background-blend-mode: multiply;
    background-image: url(./resources/miller.jpg);
    background-size: contain;
-   background-size: 150%;
-   
+   background-size: 125%;
    background-repeat: no-repeat;
-   padding-top: 60%;
-   padding-bottom: 60%;
-   
+   padding-top: 50%;
+   padding-bottom: 50%;
 
    border-radius: 10px;
+
 
 }
 
 
 .boxshow2 {
-   background-color: #29324171;
+   background-color: var(--seondary-color);
    background-blend-mode: multiply;
    background-image: url(./resources/space.jpg);
    background-size: contain;
-   background-size: 150%;
+   background-size: 125%;
    background-repeat: no-repeat;
-   padding-top: 60%;
-   padding-bottom: 60%;
+   padding-top: 50%;
+   padding-bottom: 50%;
 
    border-radius: 10px;
+
 }
 
 .boxshow3 {
-   background-color: #2932415a;
+   background-color: var(--seondary-color);
    background-blend-mode: multiply;
    background-image: url(./resources/zoo.jpg);
    background-size: contain;
-   background-size: 150%;
+   background-size: 125%;
    background-repeat: no-repeat;
-   padding-top: 60%;
-   padding-bottom: 60%;
+   padding-top: 50%;
+   padding-bottom: 50%;
 
    border-radius: 10px;
+
 }
 /* second part of showcase cards */
 
 .boxshow4 {
-   background-color: aliceblue;
+   background-color: var(--seondary-color);
+   background-blend-mode: multiply;
    background-image: url(./resources/aquarium.jpg);
    background-size: contain;
-   background-size: 100%;
+   background-size: 125%;
    background-repeat: no-repeat;
-   padding-top: 35%;
-   padding-bottom: 35%;
+   padding-top: 50%;
+   padding-bottom: 50%;
 
-   /* so it applies of the top side only */
-   border-top-left-radius: 3px;
-   border-top-right-radius: 3px;
+   border-radius: 10px;
 
 }
 
 
 
 .boxshow5 {
-   background-color: #2932413c;
+   background-color: var(--seondary-color);
    background-blend-mode: multiply;
    background-image: url(./resources/corner.jpeg);
    background-size: contain;
-   background-size: 150%;
+   background-size: 125%;
    background-repeat: no-repeat;
-   padding-top: 60%;
-   padding-bottom: 60%;
+   padding-top: 50%;
+   padding-bottom: 50%;
+
    border-radius: 10px;
+
 }
 
 .boxshow6 {
@@ -565,7 +568,7 @@ form input:focus {
    justify-content: space-between;
    padding: 0px;
 
-   margin-top: 3rem;
+   margin-top: 1rem;
 }
 
 hr {
